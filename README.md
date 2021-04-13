@@ -18,3 +18,5 @@ Partez à la découverte de Docker, une solution de virtualisation permettant de
 ![docker image](images/docker-image.png)
 ### Docker Conteneur
 ![docker conteneur](images/docker-conteneur.png)
+### Docker Registre (Librairie d'images)
+![docker registre](images/docker-registre.png)
