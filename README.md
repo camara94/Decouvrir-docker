@@ -16,3 +16,5 @@ Partez à la découverte de Docker, une solution de virtualisation permettant de
 ![docker client](images/docker-client.png)
 ### Docker Image
 ![docker image](images/docker-image.png)
+### Docker Conteneur
+![docker conteneur](images/docker-conteneur.png)
