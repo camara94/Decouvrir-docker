@@ -31,8 +31,12 @@ Après avoir decouvrir Docker, nous allons l'installer selon notre plateforme à
 <code>
     <pre>
         docker search nomImage # Pour chercher une image
+        docker pull nomImage # pour telechager une image
         docker images # pour voir la liste des image en local
         docker rmi -f nomImage # pour supprimer une image
         docker rm -f $(docker ps -a -q) # pour supprimer également une image
     </pre>
 </code>
+
+## Explorer Docker Hub
+Vous pouvez également explorer docker hub pour chercher des images et télécharger en local pour vos utilisations personnelles à travers ce lien ci-dessous: <br/> [Docker Hub](https://hub.docker.com)
