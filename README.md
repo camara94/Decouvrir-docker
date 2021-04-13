@@ -12,6 +12,7 @@ Partez à la découverte de Docker, une solution de virtualisation permettant de
 
 ### Moteur Docker (Engine)
 ![docker engine](images/docker-engine.png)
-
 ### Docker Client
 ![docker client](images/docker-client.png)
+### Docker Image
+![docker image](images/docker-image.png)
