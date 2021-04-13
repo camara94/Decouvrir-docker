@@ -26,3 +26,13 @@ Partez à la découverte de Docker, une solution de virtualisation permettant de
 
 ## Installer Docker
 Après avoir decouvrir Docker, nous allons l'installer selon notre plateforme à travers ce lien ci-dessous: <br/> [Installer Docker](https://docs.docker.com/engine/install/)
+
+## Quelques commande docker
+<code>
+    <pre>
+        docker search nomImage # Pour chercher une image
+        docker images # pour voir la liste des image en local
+        docker rmi -f nomImage # pour supprimer une image
+        docker rm -f $(docker ps -a -q) # pour supprimer également une image
+    </pre>
+</code>
