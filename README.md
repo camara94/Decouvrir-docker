@@ -40,3 +40,6 @@ Après avoir decouvrir Docker, nous allons l'installer selon notre plateforme à
 
 ## Explorer Docker Hub
 Vous pouvez également explorer docker hub pour chercher des images et télécharger en local pour vos utilisations personnelles à travers ce lien ci-dessous: <br/> [Docker Hub](https://hub.docker.com)
+## Appréhender la Docker
+* pour afficher le manuel de la commande docker, on utilise l'option **--help**:<br/><code>docker --help | more</code>![docker help](images/dokerhelp.png)
+* pour afficher l'aide une commande de context on utilise également l'option **--help**:<br/><code>docker container --help | more</code>![docker context help](images/dokercontexthelp.png)
