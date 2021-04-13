@@ -49,3 +49,8 @@ Vous pouvez également explorer docker hub pour chercher des images et télécha
 ![cycle de vie de base d'un conteneur](images/cycledeviedebasedunconteneur.png)
 ### Le Cycle de vie de avancé d'un conteneur docker
 ![cycle de vie de avancé d'un conteneur](images/cycledevieavancedunconteneur.png)
+
+## Exécuter un conteneur docker
+* <code>docker run nomImage</code>
+* <code>docker run -ti nomImage</code> pour l'exécuter en mode interactif
+* <code> docker ps -a</code> pour afficher les conteneurs la lancé
