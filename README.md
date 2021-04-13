@@ -23,3 +23,6 @@ Partez à la découverte de Docker, une solution de virtualisation permettant de
 
 ## Appréhender le fonctionnement de Docker
 ![fonctionnement docker](images/architecturedocker-fonctionnement.png)
+
+## Installer Docker
+Après avoir decouvrir Docker, nous allons l'installer selon notre plateforme à travers ce lien ci-dessous: <br/> [Installer Docker](https://docs.docker.com/engine/install/)
