@@ -20,3 +20,6 @@ Partez à la découverte de Docker, une solution de virtualisation permettant de
 ![docker conteneur](images/docker-conteneur.png)
 ### Docker Registre (Librairie d'images)
 ![docker registre](images/docker-registre.png)
+
+## Appréhender le fonctionnement de Docker
+![fonctionnement docker](images/architecturedocker-fonctionnement.png)
