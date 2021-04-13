@@ -43,3 +43,9 @@ Vous pouvez également explorer docker hub pour chercher des images et télécha
 ## Appréhender la Docker
 * pour afficher le manuel de la commande docker, on utilise l'option **--help**:<br/><code>docker --help | more</code>![docker help](images/dokerhelp.png)
 * pour afficher l'aide une commande de context on utilise également l'option **--help**:<br/><code>docker container --help | more</code>![docker context help](images/dokercontexthelp.png)
+
+## Le Cycle de vie d'un conteneur docker
+### Le Cycle de vie de base d'un conteneur docker
+![cycle de vie de base d'un conteneur](images/cycledeviedebasedunconteneur.png)
+### Le Cycle de vie de avancé d'un conteneur docker
+![cycle de vie de avancé d'un conteneur](images/cycledevieavancedunconteneur.png)
