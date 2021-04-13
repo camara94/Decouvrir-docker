@@ -6,3 +6,6 @@ Partez à la découverte de Docker, une solution de virtualisation permettant de
 
 # Machine Virtuelle VS Docker
 ![Machine Virtuelle vs Docker](images/machinevirtuelvsdocker.png)
+
+## Architecture Docker
+![architecture docker](images/architecturedocker.png)
