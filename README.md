@@ -54,3 +54,29 @@ Vous pouvez également explorer docker hub pour chercher des images et télécha
 * <code>docker run nomImage</code>
 * <code>docker run -ti nomImage</code> pour l'exécuter en mode interactif
 * <code> docker ps -a</code> pour afficher les conteneurs la lancé
+* [Ressource pour configurer mongodb sur mon VPS](https://www.bmc.com/blogs/mongodb-docker-container/)
+  
+## Exécution en mode attaché et detaché
+* <code>docker run --name=mongodb --hostnamehost01 -it mong</code>
+* pour verifier le nom <code>hostname</code>
+* pour arrêter un conteneur <code>exit</code>
+* mode d'exécution en arrière plan on ajoute l'option **-d** ou **--detach** ex: <br/><code>docker run -d -it mongo</code>
+* on peut aussi balancer d'un mode en un autre avec les combinaisions suivantes: <br/> 
+* on peut vérifier les log d'un conteneur en arrière plan <code>docker logs nomImage</code>
+  
+## Inspecter un conteneur
+* on va lancer d'abord un conteneur pour pouvoir effectuer des des inspections.<br/>
+<code>docker run -d -P --name=web03 --hostname=cont03 nginx</code>
+* primièrement nous allons lancer la commande <code>docker inspect web03</code> 
+  ![inspect un conteneur](images/docker-inspect.png)
+* on peut également extraire une partie ou un attribut d'un champs avec la commande suivante: <br />
+  <code>docker inspect --format='{{.state.Status}} web03</code>
+  ![Docker inspect state](images/docker-inspect-state.png)
+
+* autre par exemple:<br />
+  <code>docker inspect --format='{{.NetworkSettings.IPAddres}}' web03</code>
+  ![ipaddress](images/docker-inspect-networksettings.png)
+
+* une dernière possibilité est: <br/>
+  <code>docker inspect --format='{{json .State}}' web03</code>
+  ![inpect state](images/docker-inspect-state2.png)
