@@ -107,5 +107,14 @@ Vous pouvez également explorer docker hub pour chercher des images et télécha
   <code>docker rm -f web03</code>
   ![arrêt avec -f](images/arret.png)
 * pour supprimer tous les conteneurs arrêtés<br/>
-  <code>docker rm $(docker ps -aq --filter status=exited)
+  <code>docker rm $(docker ps -aq --filter status=exited)</code>
   ![tous les conteneurs arrêtés](images/arrets.png)
+## Comprendre une image docker
+### C'est quoi une couche docker ?
+![comprendre une image](images/couche.png)
+### Qu'est ce qu'une image docker 
+Une image est constituée de un plusieurs couche docker
+#### Comment créer une image
+![créer une image](images/creeruneimage.png)
+#### Espace de nommage
+![nommage](images/espacenommage.png)
