@@ -80,3 +80,32 @@ Vous pouvez également explorer docker hub pour chercher des images et télécha
 * une dernière possibilité est: <br/>
   <code>docker inspect --format='{{json .State}}' web03</code>
   ![inpect state](images/docker-inspect-state2.png)
+
+## Comment lister les conteneur docker
+* pour lister les conteneurs lancés<br />
+    <code>docker ps</code>
+    ![docker ps](images/dockerps.png) 
+* pour lister tous les conteneurs même ceux qui sont arrêtes<br />
+  <code>docker ps -a</code>
+  ![docker ps -a](images/dockerpsa.png)
+* pour voir les n derniers conteneurs<br/>
+  <code>docker ps --last 2</code>
+  ![n dernier](images/ndernierconteneurs.png)
+
+* afficher uniquement les ID des conteneurs<br/>
+  <code>docker ps -q</code>
+  ![dokcer ps -q](images/psq.png)
+* les options de filtrage<br/>
+  <code>docker ps -a --filter name=web</code> 
+  ![docker ps -a --filter name=web](images/filter.png)
+<code>docker ps -a --filter status=exited</code> 
+  ![docker ps -a --filter name=web](images/exited.png)
+* lorsqu'on essaye d'arrêter un conteneur en cours d'exécution on obtient une erreur<br/>
+* <code>docker rm web03</code>
+  ![erreur d'arrêt](images/erreurda.png)
+* pour remedier à ce problème, on exécute cette commande<br />
+  <code>docker rm -f web03</code>
+  ![arrêt avec -f](images/arret.png)
+* pour supprimer tous les conteneurs arrêtés<br/>
+  <code>docker rm $(docker ps -aq --filter status=exited)
+  ![tous les conteneurs arrêtés](images/arrets.png)
