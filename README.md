@@ -118,3 +118,38 @@ Une image est constituée de un plusieurs couche docker
 ![créer une image](images/creeruneimage.png)
 #### Espace de nommage
 ![nommage](images/espacenommage.png)
+
+## Comment créer une image à partir d'un conteneur docker
+* <code>docker run -it --name=mycentos centos</code>
+* parfaut la commande <code>wget</code> n'existe pas sur centos
+  ![myfirstimage](images/myfirstimage.png)
+* on va installer **wget** dans centos
+* <code>yum install wget</code>
+  ![yum install](images/yuminstall.png)
+* on va tester **wget** <code>wget</code>, puis on l'arrêter et enfin nous allons tester <code>docker ps -a</code>
+  ![qlq cmd](images/qlqcmd.png)
+* on peut visualiser les différences
+  <code>docker diff mycentos</code>
+  ![diff](images/diffwget.png)
+  > pour dire que dans le dossier **/bin** nous avons installer **wget**<br/>
+  > A sigifie **Ajout** <br />
+  > C sigifie **Change** <br />
+  > D signifie **Delete**
+
+### Comment enrégister sur notre depôt
+<code>docker commit mycentos ldamaro98/mycentos:1.0</code>
+## Générer des volumes docker
+* Volumes nommés<br />
+  <code>docker volume create --name=vol1</code>
+* Pour afficher la liste des volumes docker<br/>
+  <code>docker volume ls</code>
+* Pour monter un volume<br />
+   <code>docker run -it -v vol1:/www/html mycentos</code>
+* Pour inspeter le volume<br/>
+  <code>docker volume inspect vol1</code>
+* Pour supprimer un volume<br/>
+  <code>docker volume rm -f vol1</code>
+* Pour créer un anonyme, on le crée lors de lancement d'un conteneur<br/>
+  <code>docker run -v /var/www/html mycentos</code>
+* Pour supprimer un volume anonyme, lors de la suppression d'une image<br />
+  <code>docker rm -v idImage</code>
