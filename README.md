@@ -153,3 +153,25 @@ Une image est constituée de un plusieurs couche docker
   <code>docker run -v /var/www/html mycentos</code>
 * Pour supprimer un volume anonyme, lors de la suppression d'une image<br />
   <code>docker rm -v idImage</code>
+## Aborder les volumes d'hôte
+* nous allons d'abord lancer un serveur **nginx**<br/>
+  <code>docker run -d --name=nginx nginx</code>
+* Pour se connecter à un conteneur docker<br/>
+  <code>docker exec -it nginx</code>
+* Pour afficher le contenu du ficher de configuration<br/>
+  <code>cat /etc/nginx/nginx.conf</code>
+  ![conf](images/nginxconf.png)
+* Pour quitter(se deconnecter de **nginx**)<br>
+  <code>exit</code>
+* Pour arrêter le conteneur<br/>
+  <code>docker stop nginx </code>
+* Pour récupérer un du conteneur vers un fichier local<br/>
+  <code>mkdir nginxconf && cd nginxconf</code><br/>
+  <code>docker cp nginx:/etc/nginx/nginx.conf .</code>
+  ![ngix conf](images/cpnginx.png)
+* Pour monter le fichier dans notre conteneur<br/>
+  <code>docker run -d --name=nginx2 -v /home/user1/nginx/nginx.conf:/etc/nginx/nginx.conf</code>
+* Se connecter au connecter et vérifier <br/>
+  <code>docker exec -it nginx2 bash</code><br/>
+  <code>cat /etc/nginx/nginx.conf</code>
+  ![verifi](images/verifnginx.png)
