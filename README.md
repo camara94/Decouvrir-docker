@@ -175,3 +175,6 @@ Une image est constituée de un plusieurs couche docker
   <code>docker exec -it nginx2 bash</code><br/>
   <code>cat /etc/nginx/nginx.conf</code>
   ![verifi](images/verifnginx.png)
+
+## Découvrir le modèle réseau
+![modele reseau](images/reseaubridge.png)
